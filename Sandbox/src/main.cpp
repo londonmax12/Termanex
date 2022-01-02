@@ -2,12 +2,23 @@
 #include <Termanex.h>
 
 int main() {
-	Termanex::Application app(Termanex::GetConsole());
-	
-	bool running = true;
-
-	while (running)
+	class App : public Termanex::Application
 	{
-		app.Output("ddd");
-	}
+	public:
+		App(LPCTSTR name)
+			: Termanex::Application(name)
+		{
+
+		}
+
+		virtual void OnUpdate() override
+		{
+			Begin();
+			Fill("A", Application::Color::PINK);
+			End();
+		}
+	};
+	
+	App app(L"Test App");
+	app.Run();
 }

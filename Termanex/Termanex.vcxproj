@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application\Application.h" />
+    <ClInclude Include="src\Console\ConsoleCommands.h" />
     <ClInclude Include="src\Utils\Tools.h" />
     <ClInclude Include="Termanex.h" />
   </ItemGroup>
