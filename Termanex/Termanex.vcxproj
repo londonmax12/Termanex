@@ -20,12 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application\Application.h" />
+    <ClInclude Include="src\Characters.h" />
     <ClInclude Include="src\Console\ConsoleCommands.h" />
+    <ClInclude Include="src\Input\Input.h" />
     <ClInclude Include="src\Utils\Tools.h" />
     <ClInclude Include="Termanex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Application\Application.cpp" />
+    <ClCompile Include="src\Input\Input.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
